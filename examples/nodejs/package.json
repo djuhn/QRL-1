@@ -4,6 +4,12 @@
   "dependencies": {
     "grpc": "latest",
     "temp": "latest",
-    "fs-extra": "latest"
-  }
+    "fs-extra": "latest",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
